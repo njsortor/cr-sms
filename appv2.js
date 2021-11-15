@@ -18,8 +18,8 @@ var recipientList = []
 
 con.connect(function(err) {
   if (err) throw err
-  //  con.query("SELECT CellPhone FROM textlist820", function (err, result, fields) {
-    con.query("SELECT CellPhone from test_notify2", function (err, result, fields) {
+   con.query("SELECT CellPhone FROM textlist820", function (err, result, fields) {
+    // con.query("SELECT CellPhone from test_notify2", function (err, result, fields) {
     if (err) throw err
     // console.log(result)
     Object.keys(result).forEach(function(key) {
