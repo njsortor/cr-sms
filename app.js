@@ -1,9 +1,13 @@
 var mysql = require('mysql')
 require('dotenv').load()
 
-const accountSid = process.env.TWILIO_ACCOUNT_SID
-const authToken = process.env.TWILIO_AUTH_TOKEN
-const notifyServiceSid = process.env.NOTIFY_SERVICE_SID
+const accountSid = "AC3add4d58ff159a8ab7a7f6e2e237b4af"
+const authToken = "f8ca7c565a8ae7835f85706e5cb4744f"
+const notifyServiceSid = "ISaedcf78d5050588facbe15e3e2bf899e"
+
+// const accountSid = process.env.TWILIO_ACCOUNT_SID
+// const authToken = process.env.TWILIO_AUTH_TOKEN
+// const notifyServiceSid = process.env.NOTIFY_SERVICE_SID
 
 const client = require('twilio')(accountSid, authToken)
 
